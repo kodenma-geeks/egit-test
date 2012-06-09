@@ -17,3 +17,6 @@ gen/
 local.properties
 
 # eclipse settings
+.settings/
+.classpath
+.project
