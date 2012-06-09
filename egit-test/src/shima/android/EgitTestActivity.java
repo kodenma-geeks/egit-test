@@ -14,9 +14,18 @@ public class EgitTestActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        
         LinearLayout linear = (LinearLayout)findViewById(R.id.linear);
- 		TextView titleView = new TextView(this);
+		TextView titleView = new TextView(this);
+		titleView.setText("user-Bが６月９日２０時55分に追加修正し、GitHubにプッシュ");
+		titleView.setTextSize(18);
+		titleView.setTextColor(Color.GREEN);
+		titleView.setBackgroundColor(Color.LTGRAY);
+		titleView.setHeight(120);
+		titleView.setGravity(Gravity.CENTER);
+		linear.addView(titleView);
+        
+        linear = (LinearLayout)findViewById(R.id.linear);
+ 		titleView = new TextView(this);
  		titleView.setText("user-Aが６月９日21時15分に追加修正し、ローカルにコミット");
  		titleView.setTextSize(12);
  		titleView.setTextColor(Color.BLUE);
