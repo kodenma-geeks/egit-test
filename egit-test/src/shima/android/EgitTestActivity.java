@@ -43,5 +43,15 @@ public class EgitTestActivity extends Activity {
 		titleView.setHeight(120);
 		titleView.setGravity(Gravity.CENTER);
 		linear.addView(titleView);
+		
+        linear = (LinearLayout)findViewById(R.id.linear);
+		titleView = new TextView(this);
+		titleView.setText("hrs-nkym‚ª7/4 23:05Auser-B‚Ìmaster‚ğfork‚µ‚Äbranch‚µ‚½‚à‚Ì‚ğcommit\n‚»‚ÌŒãpull request‚ğ“Š‚°‚é");
+		titleView.setTextSize(14);
+		titleView.setTextColor(Color.GREEN);
+		titleView.setBackgroundColor(Color.BLACK);
+		titleView.setHeight(100);
+		titleView.setGravity(Gravity.RIGHT);
+		linear.addView(titleView);
     }
 }
